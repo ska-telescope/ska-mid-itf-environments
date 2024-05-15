@@ -1,3 +1,7 @@
+SPOOKD_VALUES=charts/ska-mid-itf-ghosts/values.yaml
+SPOOKD_VERSION=0.2.2
+SPOOKD_NAMESPACE=spookd
+
 # include core make support
 include .make/base.mk
 
