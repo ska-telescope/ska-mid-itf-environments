@@ -26,12 +26,7 @@ include .make/xray.mk
 itf-te-pass-env: KUBE_NAMESPACE := test-equipment
 itf-te-pass-env: itf-skysimctl-links## Generate Gitlab CI configuration for SkySimCtl device server deployment
 
-itf-te-install:
-	@make vars;
-	@make k8s-install-chart
-
 itf-te-template:
-	@make vars;
 	@make k8s-template-chart
 	@mkdir -p build
 	@mv manifests.yaml build/
