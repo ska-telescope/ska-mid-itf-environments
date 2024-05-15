@@ -1,3 +1,24 @@
+# include core make support
+include .make/base.mk
+
+# include makefile targets from the submodule
+include .make/oci.mk
+
+# include k8s support
+include .make/k8s.mk
+
+# include Helm Chart support
+include .make/helm.mk
+
+# Include Python support
+include .make/python.mk
+
+# include raw support
+include .make/raw.mk
+
+# include Xray uploads
+include .make/xray.mk
+
 itf-te-pass-env: KUBE_NAMESPACE := test-equipment
 itf-te-pass-env: itf-skysimctl-links## Generate Gitlab CI configuration for SkySimCtl device server deployment
 
@@ -34,3 +55,4 @@ itf-skysimctl-links:
 
 itf-spookd-uninstall:
 	@make k8s-uninstall-chart K8S_CHART=ska-mid-itf-ghosts KUBE_APP=spookd KUBE_NAMESPACE=$(SPOOKD_NAMESPACE) HELM_RELEASE=whoyougonnacall
+
