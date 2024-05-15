@@ -94,7 +94,7 @@ deploy-skysimctl-install:
   stage: test-equipment-setup
   trigger:
     project: ska-telescope/ska-te-mid-skysimctl
-    branch: main
+    branch: at-2069-update-trigger-repo
   inherit:
     variables: false
   needs:
