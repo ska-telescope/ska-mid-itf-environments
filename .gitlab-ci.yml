@@ -1,12 +1,6 @@
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-workflow:
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "pipeline"
-      when: never
-    - when: always
-
 stages:
   - verify-test-equipment
   - lint
