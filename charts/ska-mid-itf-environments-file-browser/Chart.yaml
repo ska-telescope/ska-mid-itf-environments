@@ -1,6 +1,6 @@
 ---
 apiVersion: v2
-name: file-browser
+name: ska-mid-itf-environments-file-browser
 description: A Helm chart for which provides a file browser for the Spectrum Analyser using filestash.
 
 # A chart can be either an 'application' or a 'library' chart.

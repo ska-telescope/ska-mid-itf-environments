@@ -7,7 +7,7 @@
   variables:
     CLUSTER_DOMAIN: miditf.internal.skao.int
     INGRESS_HOST: k8s.miditf.internal.skao.int
-    K8S_CHART: test-equipment
+    K8S_CHART: ska-mid-itf-environments-test-equipment
     KUBE_NAMESPACE: test-equipment
     SERVICE_ACCOUNT: ci-svc-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG-test-eq
     NEXUS_CACHE: NEXUS_CACHE
@@ -104,7 +104,7 @@ deploy-skysimctl-install:
     CLUSTER_DOMAIN: miditf.internal.skao.int
     INGRESS_HOST: k8s.miditf.internal.skao.int
     KUBE_APP: ska-ser-test-equipment
-    K8S_CHART: test-equipment-verification
+    K8S_CHART: ska-mid-itf-environments-test-equipment-verification
     KUBE_NAMESPACE: "ci-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG"
     SERVICE_ACCOUNT: ci-svc-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG-test-eq
     NEXUS_CACHE: NEXUS_CACHE
@@ -130,7 +130,7 @@ deploy-skysimctl-install:
       - build/
   rules:
     - changes:
-        - charts/test-equipment-verification/*
+        - charts/ska-mid-itf-environments-test-equipment-verification/*
         - resources/makefiles/test-equipment-dev.mk
       if: $CI_PIPELINE_SOURCE == "merge_request_event"
       when: manual

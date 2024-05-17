@@ -17,7 +17,7 @@ FILEBROWSER_CONFIG_SECRET_NAME := file-browser-config-secret
 file-browser-install: K8S_CHART_PARAMS := $(K8S_CHART_PARAMS) --set mounts.configSecret.name=$(FILEBROWSER_CONFIG_SECRET_NAME) \
 	--set mounts.configSecret.dest=$(FILEBROWSER_CONFIG_SECRET_FILE) \
 	--set env.type=$(FILEBROWSER_ENV)
-file-browser-install: K8S_CHART := file-browser
+file-browser-install: K8S_CHART := ska-mid-itf-environments-file-browser
 file-browser-install: KUBE_NAMESPACE := file-browser
 file-browser-install: k8s-uninstall-chart file-browser-secrets k8s-install-chart
 

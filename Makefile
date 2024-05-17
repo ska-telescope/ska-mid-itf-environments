@@ -1,4 +1,4 @@
-HELM_CHARTS_TO_PUBLISH=test-equipment
+HELM_CHARTS_TO_PUBLISH=ska-mid-itf-environments-test-equipment ska-mid-itf-environments-file-browser
 JIVE ?= false# Enable jive
 TARANTA ?= false# Enable Taranta
 MINIKUBE ?= false ## Minikube or not

@@ -4,7 +4,7 @@ deploy-file-browser:
     - ska-k8srunner-za-itf
   stage: deploy
   variables:
-    K8S_CHART: file-browser
+    K8S_CHART: ska-mid-itf-environments-file-browser
     KUBE_NAMESPACE: file-browser
     FILEBROWSER_ENV: production
   script:
