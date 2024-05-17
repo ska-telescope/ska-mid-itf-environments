@@ -1,7 +1,7 @@
 deploy-file-browser:
   tags:
     - ska-k8srunner-za-itf
-  stage: test-equipment-setup
+  stage: deploy
   variables:
     K8S_CHART: file-browser
     KUBE_NAMESPACE: file-browser

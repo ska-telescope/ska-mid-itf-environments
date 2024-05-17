@@ -23,12 +23,12 @@ def setup(app):
 
 # -- Project information -----------------------------------------------------
 
-project = "SKA Mid ITF Tests"
-copyright = "Adriaan de Beer, adebeer@sarao.ac.za"
+project = "SKA Mid ITF Environments"
+copyright = "Pieter Jordaan", "Akhil Joseph, Adriaan de Beer, Nkosing'phile Nzotho, Dave Horn, Johan Coetzer"
 author = "ATLAS Team"
 
 # The full version, including alpha/beta/rc tags
-release = '22.0.1'
+release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 

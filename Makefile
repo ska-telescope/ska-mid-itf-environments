@@ -53,4 +53,4 @@ include .make/xray.mk
 
 include resources/makefiles/test-equipment.mk
 include resources/makefiles/test-equipment-dev.mk
-include resources/makefiles/file-browser-dev.mk
+include resources/makefiles/file-browser.mk

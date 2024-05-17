@@ -9,7 +9,16 @@ workflow:
 
 stages:
   - verify-test-equipment
-  - test-equipment-setup
+  - lint
+  - build
+  - test
+  - deploy
+  - integration
+  - staging
+  - join-reports
+  - pages
+  - publish
+  - scan
 
 include:
   - project: "ska-telescope/templates-repository"
