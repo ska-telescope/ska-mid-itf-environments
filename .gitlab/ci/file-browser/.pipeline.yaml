@@ -1,0 +1,25 @@
+deploy-file-browser:
+  image: $SKA_K8S_TOOLS_BUILD_DEPLOY
+  tags:
+    - ska-k8srunner-za-itf
+  stage: deploy
+  variables:
+    K8S_CHART: ska-mid-itf-environments-file-browser
+    KUBE_NAMESPACE: file-browser
+    FILEBROWSER_ENV: production
+  script:
+    - make k8s-namespace
+    - make file-browser-install
+    - make k8s-wait
+    - make k8s-get-pods
+  environment:
+    name: ska-mid-itf/file-browser
+    kubernetes:
+      namespace: "$KUBE_NAMESPACE"
+  allow_failure: true # need to keep this to unlock the pipeline
+  extends:
+    - .integration_rules
+  rules:
+    - changes:
+        - charts/file-browser/*
+      when: always

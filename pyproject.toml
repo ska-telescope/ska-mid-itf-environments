@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ska-mid-itf-environments"
+version = "0.1.0"
+description = "SKA Mid ITF Environments"
+authors = ["Pieter Jordaan", "Akhil Joseph", "Adriaan de Beer", "Nkosing'phile Nzotho", "Dave Horn", "Johan Coetzer"]
+license = "BSD 3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^7.2.6"
+sphinx-rtd-theme = "^1.2.2"
+recommonmark = "^0.7.1"
+markupsafe = "^2.1.5"
+ska-ser-sphinx-theme = "^0.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = 'skao'
+url = 'https://artefact.skao.int/repository/pypi-internal/simple'
+
+[[tool.poetry.source]]
+name = "PyPI-public"
+url = 'https://pypi.org/simple'
