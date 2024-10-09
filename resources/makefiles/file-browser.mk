@@ -2,7 +2,7 @@
 FILEBROWSER_ENV ?= dev
 FILEBROWSER_CONFIG_SECRET_FILE := config.json
 # This is overwritten in CI/CD
-FILEBROWSER_CONFIG_PATH ?= ./charts/file-browser/secrets/example.json
+FILEBROWSER_CONFIG_PATH ?= ./charts/ska-mid-itf-environments-file-browser/secrets/example.json
 FILEBROWSER_CONFIG_SECRET_NAME := file-browser-config-secret
 
 ## TARGET: file-browser-install
