@@ -83,3 +83,7 @@ ska-taranta:
 # CIA
 ska-ser-config-inspector:
   enabled: true
+
+ska-tango-tangogql:
+  ska-tango-base:
+    enabled: false
