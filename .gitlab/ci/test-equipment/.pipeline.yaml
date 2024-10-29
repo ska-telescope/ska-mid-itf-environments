@@ -57,9 +57,6 @@ remove-test-equipment:
       namespace: $KUBE_NAMESPACE
     url: "https://$INGRESS_HOST/$KUBE_NAMESPACE/taranta"
     action: stop
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-      when: manual
   allow_failure: true # need to keep this to unlock the pipeline
 
 generate-skysimctl-config:
