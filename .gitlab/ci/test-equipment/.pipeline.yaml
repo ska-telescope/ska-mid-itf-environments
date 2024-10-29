@@ -11,6 +11,8 @@
     KUBE_NAMESPACE: test-equipment
     SERVICE_ACCOUNT: ci-svc-$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG-test-eq
     NEXUS_CACHE: NEXUS_CACHE
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   tags:
     - ska-k8srunner-za-itf
 
@@ -57,6 +59,9 @@ remove-test-equipment:
       namespace: $KUBE_NAMESPACE
     url: "https://$INGRESS_HOST/$KUBE_NAMESPACE/taranta"
     action: stop
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: manual
   allow_failure: true # need to keep this to unlock the pipeline
 
 generate-skysimctl-config:
