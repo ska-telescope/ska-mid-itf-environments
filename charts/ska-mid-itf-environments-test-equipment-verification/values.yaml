@@ -19,12 +19,13 @@ test-equipment:
   deviceServers:
     progattenuator:
       devices:
-        - name: rc1dat800030
-          model: RC1DAT800030
-          host: 10.165.3.6
-          port: 45451
-          protocol: telnet
-          logging_level_default: 5
+        []
+        # - name: rc1dat800030
+        #   model: RC1DAT800030
+        #   host: 10.165.3.6
+        #   port: 45451
+        #   protocol: telnet
+        #   logging_level_default: 5
     awg:
       devices:
         - name: awg5208i
