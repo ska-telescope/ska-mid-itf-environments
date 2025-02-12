@@ -32,7 +32,7 @@ test-equipment:
           model: AWG5208I
           host: 10.165.3.3
           port: 0
-          # protocol: visa
+          protocol: tcp
           logging_level_default: 5
     signalgenerator:
       devices:
