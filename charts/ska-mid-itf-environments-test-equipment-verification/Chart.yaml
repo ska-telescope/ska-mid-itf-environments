@@ -18,7 +18,7 @@ dependencies:
   # SKA Test Equipment
   - name: ska-ser-test-equipment
     # check latest version
-    version: 0.9.1-dev.c86c01d92
+    version: 0.9.1-dev.c774d5a35
     # version: 0.9.1
     # repository: https://artefact.skao.int/repository/helm-internal
     repository: https://gitlab.com/api/v4/projects/31506252/packages/helm/dev
