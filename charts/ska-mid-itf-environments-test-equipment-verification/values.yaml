@@ -34,14 +34,14 @@ test-equipment:
           port: 0
           protocol: tcp
           logging_level_default: 5
-    oscilloscope:
-      devices:
-        - name: mso64b
-          model: MSO64B
-          host: 10.165.3.2
-          port: 0
-          protocol: tcp
-          logging_level_default: 5
+    # oscilloscope:
+    #   devices:
+    #     - name: mso64b
+    #       model: MSO64B
+    #       host: 10.165.3.2
+    #       port: 0
+    #       protocol: tcp
+    #       logging_level_default: 5
     signalgenerator:
       devices:
         []
