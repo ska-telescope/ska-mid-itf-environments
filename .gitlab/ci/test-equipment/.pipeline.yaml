@@ -44,8 +44,8 @@ deploy-test-equipment:
     reports:
       junit:
         - build/report.xml
-  needs:
-    - remove-test-equipment
+  # needs:
+  #   - remove-test-equipment
   allow_failure: true # need to keep this to unlock the pipeline
 
 remove-test-equipment:
