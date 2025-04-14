@@ -88,4 +88,4 @@ tangogql:
 
 # CIA
 ska-ser-config-inspector:
-  enabled: true
+  enabled: false
