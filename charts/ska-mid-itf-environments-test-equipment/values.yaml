@@ -64,7 +64,7 @@ skysimctl:
     pullPolicy: Always
 
 # TARANTA SUITE
-ska-taranta:
+ska-tango-taranta:
   enabled: true
   ingress:
     enabled: true
@@ -80,10 +80,12 @@ ska-taranta:
         cpu: 1000m # 1000m = 1 CPU
         memory: 1024Mi # 1024Mi = 1 GB mem
 
+tangogql:
+  ska-tango-base:
+    enabled: false
+  ska-tango-examples:
+    enabled: false
+
 # CIA
 ska-ser-config-inspector:
   enabled: true
-
-ska-tango-tangogql:
-  ska-tango-base:
-    enabled: false
