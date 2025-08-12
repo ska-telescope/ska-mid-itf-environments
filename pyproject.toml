@@ -28,3 +28,6 @@ url = 'https://artefact.skao.int/repository/pypi-internal/simple'
 [[tool.poetry.source]]
 name = "PyPI-public"
 url = 'https://pypi.org/simple'
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
