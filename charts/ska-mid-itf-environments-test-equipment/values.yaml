@@ -87,5 +87,5 @@ tangogql:
     enabled: false
 
 # CIA
-ska-ser-config-inspector:
-  enabled: true
+# ska-ser-config-inspector:
+#   enabled: true
